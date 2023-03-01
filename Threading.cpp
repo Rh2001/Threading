@@ -92,7 +92,7 @@ int main()
 
     if (userchoice == 0) {
         auto start_time = std::chrono::system_clock::now();
-        func1(*loop_count);   //pass by value 
+        func1(*loop_count);   
         func2(*loop_count);
         auto end_time = std::chrono::system_clock::now();;
 
