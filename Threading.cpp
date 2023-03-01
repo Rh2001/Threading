@@ -100,7 +100,6 @@ int main()
         std::cout << "Ran " << *loop_count << " loops on one thread sequentially " << std::endl;
         std::this_thread::sleep_for(std::chrono::milliseconds(1000));
 
-        std::chrono::duration<double> timeSpent = end_time - start_time;
         std::cout << "execution took: " <<  std::chrono::duration_cast<std::chrono::milliseconds>(end_time - start_time).count() << " milliseconds" << std::endl;  //turns the start_time and end_time variables into a printable one
         std::cout << "and " << std::chrono::duration_cast<std::chrono::nanoseconds>(end_time - start_time).count() << " nanoseconds" << std::endl;
 
@@ -133,8 +132,6 @@ int main()
         std::this_thread::sleep_for(std::chrono::milliseconds(1000));
 
 
-
-        std::chrono::duration<double> timeSpent = end_time - start_time;
         std::cout << "execution took: " << std::chrono::duration_cast<std::chrono::milliseconds>(end_time - start_time).count() << " milliseconds" << std::endl;
         std::cout << "and " << std::chrono::duration_cast<std::chrono::nanoseconds>(end_time - start_time).count() << " nanoseconds" << std::endl;
 
